@@ -27,3 +27,57 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: $primary-color;
 }
+
+
+
+.skills-imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 6rem;
+  padding-block-start: 6rem;
+}
+
+.skills-img {
+  block-size: 95px;
+  inline-size: 95px;
+}
+
+@media (max-width: 1100px) {
+  .skills-img {
+    block-size: 100px;
+    inline-size: 100px;
+  }
+}
+
+@media (max-width: 810px) {
+  .skills-img {
+    block-size: 85px;
+    inline-size: 85px;
+  }
+}
+
+@media (max-width: 675px) {
+  .skills-imgs {
+    gap: 3rem;
+  }
+  .skills-img {
+    block-size: 70px;
+    inline-size: 70px;
+  }
+}
+
+@media (max-width: 340px) {
+  .skills-img {
+    block-size: 55px;
+    inline-size: 55px;
+  }
+}
+
+picture,
+svg,
+img {
+  display: block;
+  max-inline-size: 100%;
+  object-fit: contain;
+}
